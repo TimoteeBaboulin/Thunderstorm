@@ -1,6 +1,5 @@
 package com.mia.thunderstormmod;
 
-import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -24,8 +23,6 @@ public class ThunderstormClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
-        // Some client setup code
-        Thunderstorm.LOGGER.info("HELLO FROM CLIENT SETUP");
-        Thunderstorm.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
     }
 }

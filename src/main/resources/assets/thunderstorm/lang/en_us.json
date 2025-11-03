@@ -1,7 +1,5 @@
 {
-  "itemGroup.thunderstorm": "Example Mod Tab",
-  "block.thunderstorm.example_block": "Example Block",
-  "item.thunderstorm.example_item": "Example Item",
+  "item.thunderstorm.battery": "Battery",
 
   "thunderstorm.configuration.title": "Thunderstorm Configs",
   "thunderstorm.configuration.section.thunderstorm.common.toml": "Thunderstorm Configs",
