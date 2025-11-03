@@ -1,0 +1,13 @@
+{
+  "itemGroup.thunderstorm": "Example Mod Tab",
+  "block.thunderstorm.example_block": "Example Block",
+  "item.thunderstorm.example_item": "Example Item",
+
+  "thunderstorm.configuration.title": "Thunderstorm Configs",
+  "thunderstorm.configuration.section.thunderstorm.common.toml": "Thunderstorm Configs",
+  "thunderstorm.configuration.section.thunderstorm.common.toml.title": "Thunderstorm Configs",
+  "thunderstorm.configuration.items": "Item List",
+  "thunderstorm.configuration.logDirtBlock": "Log Dirt Block",
+  "thunderstorm.configuration.magicNumberIntroduction": "Magic Number Text",
+  "thunderstorm.configuration.magicNumber": "Magic Number"
+}
