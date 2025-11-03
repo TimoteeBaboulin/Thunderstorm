@@ -1,6 +1,8 @@
 {
   "item.thunderstorm.battery": "Battery",
 
+  "block.thunderstorm.energy_block": "Energy Block",
+
   "thunderstorm.configuration.title": "Thunderstorm Configs",
   "thunderstorm.configuration.section.thunderstorm.common.toml": "Thunderstorm Configs",
   "thunderstorm.configuration.section.thunderstorm.common.toml.title": "Thunderstorm Configs",
