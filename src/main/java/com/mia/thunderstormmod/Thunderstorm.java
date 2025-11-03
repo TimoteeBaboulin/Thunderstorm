@@ -1,5 +1,6 @@
 package com.mia.thunderstormmod;
 
+import com.mia.thunderstormmod.block.ModBlocks;
 import com.mia.thunderstormmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -35,6 +36,8 @@ public class Thunderstorm {
 
         ModItems.register(modEventBus);
 
+        ModBlocks.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
@@ -50,6 +53,11 @@ public class Thunderstorm {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
         {
             event.accept(ModItems.BATTERY);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
+        {
+            event.accept(ModBlocks.ENERGY_BLOCK);
         }
     }
 
