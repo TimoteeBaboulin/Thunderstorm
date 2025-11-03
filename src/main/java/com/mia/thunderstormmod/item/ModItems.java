@@ -6,22 +6,10 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class ModItems extends Item{
+public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Thunderstorm.MOD_ID);
 
-    public static final DeferredItem<Item> BATTERY = ITEMS.registerItem(
-            "battery",
-            ModItems::new,
-            ModItems::SetProperties
-    );
-
-    public ModItems(Properties properties) {
-        super(properties);
-    }
-
-    public static Item.Properties SetProperties(Item.Properties properties) {
-        return properties;
-    }
+    public static final DeferredItem<Item> BATTERY = ITEMS.registerSimpleItem("battery");
 
     public static void register(IEventBus eventBus)
     {
