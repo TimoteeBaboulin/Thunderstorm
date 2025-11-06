@@ -1,6 +1,7 @@
 package com.mia.thunderstormmod;
 
 import com.mia.thunderstormmod.block.ModBlocks;
+import com.mia.thunderstormmod.item.ModCreativeModeTabs;
 import com.mia.thunderstormmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -34,8 +35,9 @@ public class Thunderstorm {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-        ModItems.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
+        ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
@@ -50,6 +52,8 @@ public class Thunderstorm {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+
+
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
         {
             event.accept(ModItems.BATTERY);
