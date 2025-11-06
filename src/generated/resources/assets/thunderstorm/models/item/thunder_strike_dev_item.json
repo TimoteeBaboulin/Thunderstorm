@@ -1,5 +1,5 @@
 {
-  "parent": "item/handheld",
+  "parent": "minecraft:item/handheld",
   "textures": {
     "layer0": "thunderstorm:item/thunder_strike_dev_item"
   }

@@ -59,13 +59,4 @@ public class ThunderStrikeDevItem extends Item {
         Level level = target.level();
         SpawnLightningAt(level, target.position());
     }
-
-    public static DeferredItem<ThunderStrikeDevItem> register(String name)
-    {
-        return ModItems.ITEMS.registerItem(
-                name,
-                ThunderStrikeDevItem::new,
-                ThunderStrikeDevItem::GetProperties
-        );
-    }
 }
