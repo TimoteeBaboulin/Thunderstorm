@@ -5,6 +5,11 @@
   "item.thunderstorm.thunder_strike_dev_item": "Thunder Strike Dev Item",
 
   "block.thunderstorm.energy_block": "Energy Block",
+  "block.thunderstorm.plasma_log": "Plasma Log",
+  "block.thunderstorm.plasma_wood": "Plasma Wood",
+  "block.thunderstorm.stripped_plasma_log": "Stripped Plasma Log",
+  "block.thunderstorm.stripped_plasma_wood": "Stripped Plasma Wood",
+  "block.thunderstorm.plasma_planks": "Plasma Planks",
 
   "thunderstorm.configuration.title": "Thunderstorm Configs",
   "thunderstorm.configuration.section.thunderstorm.common.toml": "Thunderstorm Configs",

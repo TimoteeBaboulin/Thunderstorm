@@ -7,6 +7,7 @@ import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TexturedModel;
 import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Item;
@@ -29,6 +30,10 @@ public class ModModelProvider extends ModelProvider {
         // -------------------- BLOCKS --------------------
         blockModels.createTrivialCube(ModBlocks.ENERGY_BLOCK.get());
 
+        blockModels.woodProvider(ModBlocks.PLASMA_LOG.get()).logWithHorizontal(ModBlocks.PLASMA_LOG.get()).wood(ModBlocks.PLASMA_WOOD.get());
+        blockModels.woodProvider(ModBlocks.STRIPPED_PLASMA_LOG.get()).logWithHorizontal(ModBlocks.STRIPPED_PLASMA_LOG.get()).wood(ModBlocks.STRIPPED_PLASMA_WOOD.get());
+
+        blockModels.createTrivialCube(ModBlocks.PLASMA_PLANKS.get());
     }
 
     @Override

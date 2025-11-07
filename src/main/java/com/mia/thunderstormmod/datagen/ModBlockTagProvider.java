@@ -19,6 +19,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ENERGY_BLOCK.get());
 
+        tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.PLASMA_LOG.get())
+                .add(ModBlocks.PLASMA_WOOD.get())
+                .add(ModBlocks.STRIPPED_PLASMA_LOG.get())
+                .add(ModBlocks.STRIPPED_PLASMA_WOOD.get())
+                .add(ModBlocks.PLASMA_PLANKS.get());
+
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ENERGY_BLOCK.get());
     }

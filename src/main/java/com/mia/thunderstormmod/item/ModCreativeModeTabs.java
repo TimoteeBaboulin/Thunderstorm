@@ -21,6 +21,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BATTERY);
                         output.accept(ModItems.THUNDER_STRIKE_DEV_ITEM);
                         output.accept(ModBlocks.ENERGY_BLOCK);
+                        output.accept(ModBlocks.PLASMA_LOG);
+                        output.accept(ModBlocks.PLASMA_WOOD);
+                        output.accept(ModBlocks.STRIPPED_PLASMA_LOG);
+                        output.accept(ModBlocks.STRIPPED_PLASMA_WOOD);
+                        output.accept(ModBlocks.PLASMA_PLANKS);
                     }).build());
 
     public static void register(IEventBus eventBus) {
