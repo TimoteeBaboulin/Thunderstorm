@@ -9,13 +9,5 @@
   "block.thunderstorm.plasma_wood": "Plasma Wood",
   "block.thunderstorm.stripped_plasma_log": "Stripped Plasma Log",
   "block.thunderstorm.stripped_plasma_wood": "Stripped Plasma Wood",
-  "block.thunderstorm.plasma_planks": "Plasma Planks",
-
-  "thunderstorm.configuration.title": "Thunderstorm Configs",
-  "thunderstorm.configuration.section.thunderstorm.common.toml": "Thunderstorm Configs",
-  "thunderstorm.configuration.section.thunderstorm.common.toml.title": "Thunderstorm Configs",
-  "thunderstorm.configuration.items": "Item List",
-  "thunderstorm.configuration.logDirtBlock": "Log Dirt Block",
-  "thunderstorm.configuration.magicNumberIntroduction": "Magic Number Text",
-  "thunderstorm.configuration.magicNumber": "Magic Number"
+  "block.thunderstorm.plasma_planks": "Plasma Planks"
 }
