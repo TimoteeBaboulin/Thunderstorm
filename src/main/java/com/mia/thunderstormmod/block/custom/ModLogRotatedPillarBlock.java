@@ -4,13 +4,14 @@ import com.mia.thunderstormmod.block.ModBlocks;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.common.ItemAbility;
 import org.jetbrains.annotations.Nullable;
 
 public class ModLogRotatedPillarBlock extends RotatedPillarBlock {
     public ModLogRotatedPillarBlock(Properties properties) {
-        super(properties);
+        super(properties.sound(SoundType.WOOD));
     }
 
     @Override
