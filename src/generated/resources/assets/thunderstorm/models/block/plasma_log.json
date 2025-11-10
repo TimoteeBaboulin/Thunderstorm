@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "thunderstorm:block/plasma_log_top",
+    "side": "thunderstorm:block/plasma_log"
+  }
+}

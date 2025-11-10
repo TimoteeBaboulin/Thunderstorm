@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "thunderstorm:block/stripped_plasma_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "thunderstorm:block/stripped_plasma_log"
+    },
+    "axis=z": {
+      "model": "thunderstorm:block/stripped_plasma_log_horizontal",
+      "x": 90
+    }
+  }
+}

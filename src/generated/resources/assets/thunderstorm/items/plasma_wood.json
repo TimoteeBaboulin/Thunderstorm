@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "thunderstorm:item/energy_block"
+    "model": "thunderstorm:block/plasma_wood"
   }
 }

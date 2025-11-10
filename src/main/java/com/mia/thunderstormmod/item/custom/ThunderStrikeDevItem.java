@@ -1,4 +1,4 @@
-package com.mia.thunderstormmod.item;
+package com.mia.thunderstormmod.item.custom;
 
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionResult;
@@ -11,7 +11,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
-import net.neoforged.neoforge.registries.DeferredItem;
 
 public class ThunderStrikeDevItem extends Item {
     public ThunderStrikeDevItem(Properties properties) {
@@ -58,14 +57,5 @@ public class ThunderStrikeDevItem extends Item {
     {
         Level level = target.level();
         SpawnLightningAt(level, target.position());
-    }
-
-    public static DeferredItem<ThunderStrikeDevItem> register(String name)
-    {
-        return ModItems.ITEMS.registerItem(
-                name,
-                ThunderStrikeDevItem::new,
-                ThunderStrikeDevItem::GetProperties
-        );
     }
 }
