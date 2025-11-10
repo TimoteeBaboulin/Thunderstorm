@@ -1,4 +1,4 @@
-package com.mia.thunderstormmod.item;
+package com.mia.thunderstormmod.item.custom;
 
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionResult;

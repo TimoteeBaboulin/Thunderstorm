@@ -1,6 +1,7 @@
 package com.mia.thunderstormmod.item;
 
 import com.mia.thunderstormmod.Thunderstorm;
+import com.mia.thunderstormmod.item.custom.ThunderStrikeDevItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
