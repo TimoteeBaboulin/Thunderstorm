@@ -31,10 +31,13 @@ public class DataGenerators {
         BlockTagsProvider blockTagsProvider = new ModBlockTagProvider(packOutput, lookupProvider);
         generator.addProvider(true, blockTagsProvider);
         generator.addProvider(true, new ModItemTagProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new ModBiomeTagProvider(packOutput, lookupProvider));
 
         generator.addProvider(true, new ModDataMapProvider(packOutput, lookupProvider));
 
         generator.addProvider(true, new ModModelProvider(packOutput));
+
+        generator.addProvider(true, new ModDatapackProvider(packOutput, lookupProvider));
     }
 
     @SubscribeEvent

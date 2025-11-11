@@ -3,10 +3,14 @@ package com.mia.thunderstormmod.block;
 import com.mia.thunderstormmod.Thunderstorm;
 import com.mia.thunderstormmod.block.custom.ModLogRotatedPillarBlock;
 import com.mia.thunderstormmod.item.ModItems;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -33,7 +37,22 @@ public class ModBlocks {
             (properties) -> new ModLogRotatedPillarBlock(properties.strength(3f)));
 
     public static final DeferredBlock<Block> PLASMA_PLANKS = ModBlocks.registerBlock("plasma_planks",
-            (properties) -> new Block(properties.sound(SoundType.WOOD).strength(2f)));
+            (properties) -> new Block(properties.sound(SoundType.WOOD).strength(2f)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 10000;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 6000;
+                }
+            });
 
     public static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {
         DeferredBlock<T> toReturn = BLOCKS.registerBlock(name, function);

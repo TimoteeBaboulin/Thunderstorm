@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "thunderstorm:plasma_overworld_placed",
+  "step": "vegetal_decoration"
+}
