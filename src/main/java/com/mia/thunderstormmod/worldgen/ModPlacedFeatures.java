@@ -16,24 +16,14 @@ import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 import java.util.List;
 
 public class ModPlacedFeatures {
-    public static ResourceKey<PlacedFeature> PLASMA_OVERWORLD_PLACED_KEY = registerKey("plasma_overworld_placed");
-    public static ResourceKey<PlacedFeature> PLASMA_NETHER_PLACED_KEY = registerKey("plasma_nether_placed");
-    public static ResourceKey<PlacedFeature> PLASMA_END_PLACED_KEY = registerKey("plasma_end_placed");
+    public static ResourceKey<PlacedFeature> PLASMA_PLACED_KEY = registerKey("plasma_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
-        register(context, PLASMA_OVERWORLD_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PLASMA_OVERWORLD_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
+        register(context, PLASMA_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PLASMA_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 0),
                         Blocks.OAK_SAPLING));
-
-        register(context, PLASMA_NETHER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PLASMA_NETHER_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 1),
-                        Blocks.CRIMSON_FUNGUS));
-
-        register(context, PLASMA_END_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PLASMA_END_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 1),
-                        Blocks.CHORUS_PLANT));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

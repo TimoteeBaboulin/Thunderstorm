@@ -1,5 +1,5 @@
 {
-  "feature": "thunderstorm:plasma_overworld",
+  "feature": "thunderstorm:plasma",
   "placement": [
     {
       "type": "minecraft:count",
@@ -7,11 +7,11 @@
         "type": "minecraft:weighted_list",
         "distribution": [
           {
-            "data": 3,
+            "data": 1,
             "weight": 9
           },
           {
-            "data": 5,
+            "data": 1,
             "weight": 1
           }
         ]

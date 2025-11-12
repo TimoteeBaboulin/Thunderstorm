@@ -17,16 +17,6 @@ public class ModBiomeTagProvider extends BiomeTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(ModTags.Biomes.ALL_VANILLA_BIOMES)
-                .addTag(BiomeTags.IS_OVERWORLD)
-                .add(Biomes.BASALT_DELTAS) // Nether biomes (because IS_NETHER doesn't register properly for some reason)
-                .add(Biomes.WARPED_FOREST)
-                .add(Biomes.CRIMSON_FOREST)
-                .add(Biomes.SOUL_SAND_VALLEY)
-                .add(Biomes.NETHER_WASTES)
-                .add(Biomes.END_BARRENS) // End biomes (because IS_END doesn't register properly for some reason)
-                .add(Biomes.END_HIGHLANDS)
-                .add(Biomes.END_MIDLANDS)
-                .add(Biomes.THE_END);
+
     }
 }

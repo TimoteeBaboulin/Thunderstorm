@@ -25,8 +25,6 @@ public class ModTags {
     }
 
     public static class Biomes {
-        public static final TagKey<Biome> ALL_VANILLA_BIOMES = createTag("all_vanilla_biomes");
-
         private static TagKey<Biome> createTag(String name) {
             return TagKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath(Thunderstorm.MOD_ID, name));
         }

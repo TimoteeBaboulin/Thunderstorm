@@ -18,37 +18,17 @@ import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvi
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 
 public class ModConfiguredFeatures {
-    public static final ResourceKey<ConfiguredFeature<?, ?>> PLASMA_OVERWORLD_KEY = registerKey("plasma_overworld");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> PLASMA_NETHER_KEY = registerKey("plasma_nether");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> PLASMA_END_KEY = registerKey("plasma_end");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PLASMA_KEY = registerKey("plasma");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
-        register(context, PLASMA_OVERWORLD_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+        register(context, PLASMA_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
            BlockStateProvider.simple(ModBlocks.PLASMA_LOG.get()),
            new ForkingTrunkPlacer(8, 8, 6),
 
            BlockStateProvider.simple(Blocks.AIR),
            new BushFoliagePlacer(ConstantInt.of(0), ConstantInt.of(0), 0),
 
-           new TwoLayersFeatureSize(1, 0, 2)).build());
-
-        register(context, PLASMA_NETHER_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.PLASMA_LOG.get()),
-                new ForkingTrunkPlacer(4, 4, 2),
-
-                BlockStateProvider.simple(Blocks.AIR),
-                new BushFoliagePlacer(ConstantInt.of(0), ConstantInt.of(0), 0),
-
-                new TwoLayersFeatureSize(1, 0, 2)).build());
-
-        register(context, PLASMA_END_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.PLASMA_LOG.get()),
-                new ForkingTrunkPlacer(12, 12, 8),
-
-                BlockStateProvider.simple(Blocks.AIR),
-                new BushFoliagePlacer(ConstantInt.of(0), ConstantInt.of(0), 0),
-
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+           new TwoLayersFeatureSize(16, 4, 16)).build());
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
